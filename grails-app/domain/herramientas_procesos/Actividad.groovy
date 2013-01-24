@@ -12,8 +12,8 @@ class Actividad {
 
 
 	static constraints = {
-		nombre			
-		descripcion			
+		nombre			blank: false
+		descripcion		blank: false
 		tipo			inList: [
 									"Operacion",
 									"Demora",
@@ -22,9 +22,6 @@ class Actividad {
 									"Archivo",
 									"Correccion"
 								]	
-		duracionMinutos	min: 0
-		agregaValor
-		esNecesaria
-		salidaGenerada
+		duracionMinutos	min: 0d		
 	}
 }

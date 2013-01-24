@@ -5,7 +5,7 @@ class Objetivo {
 	String descripcion
 	Boolean seCumple
 
-    static constraints = {
-    	descripcion blank: false, minSize: 15
-    }
+	static constraints = {
+		descripcion blank: false, minSize: 15
+	}
 }

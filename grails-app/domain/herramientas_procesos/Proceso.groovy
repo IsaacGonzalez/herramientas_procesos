@@ -10,13 +10,7 @@ class Proceso {
 	Cuestionario	diagnostico
 	Cuestionario	cincoW
 
-    static constraints = {
-    	nombre				blank: false
-		fechaInicio
-		fechaTerminacion
-		definicion
-		objetivos
-		diagnostico
-		cincoW
-    }
+	static constraints = {
+		nombre		blank: false		
+	}
 }

@@ -5,7 +5,8 @@ class Usuario extends Entidad{
 	Salida		salidaRecibida
 	String		rol
 
-    static constraints = {
-    	correo blank: false, email: true
-    }
+	static constraints = {
+		rol		blank: false
+		correo	blank: false, email: true
+	}
 }

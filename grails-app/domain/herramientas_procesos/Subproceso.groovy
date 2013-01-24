@@ -10,6 +10,8 @@ class Subproceso {
 						actividades	: Actividad
 					]
 
-    static constraints = {
-    }
+	static constraints = {
+		nombre		blank: false
+		descripcion	blank: false
+	}
 }

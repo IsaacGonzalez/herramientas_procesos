@@ -9,6 +9,6 @@ class Definicion {
 						actividades: 	Actividad
 					]
 
-    static constraints = {
-    }
+	static constraints = {
+	}
 }

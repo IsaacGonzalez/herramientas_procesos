@@ -5,7 +5,7 @@ class Cuestionario {
 	String nombre
 	static hasMany = [preguntas: Pregunta]
 
-    static constraints = {
-    	nombre	blank: false
-    }
+	static constraints = {
+		nombre	blank: false
+	}
 }

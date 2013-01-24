@@ -13,8 +13,7 @@ class Proveedor extends Entidad{
 		municipio		blank: false
 		colonia			blank: false
 		calleYNumero	blank: false
-		correo			blank: false, email: true
-		interno
+		correo			blank: false, email: true		
 	}
 
 	static mapping = {
