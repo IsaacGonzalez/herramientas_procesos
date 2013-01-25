@@ -4,7 +4,9 @@
 	<head>
 		<meta name="layout" content="main">
 		<g:set var="entityName" value="${message(code: 'actividad.label', default: 'Actividad')}" />
-		<title><g:message code="default.create.label" args="[entityName]" /></title>
+		%{-- Todavia no se por que aparece esto en el body --}%
+		%{-- <title><g:message code="default.create.label" args="[entityName]" /></title> --}%
+		<r:require modules="bootstrap"/>
 	</head>
 	<body>
 		<a href="#create-actividad" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
@@ -27,7 +29,7 @@
 			</ul>
 			</g:hasErrors>
 			<g:form action="save" >
-				<fieldset class="form">
+				<fieldset>
 					<g:render template="form"/>
 				</fieldset>
 				<fieldset class="buttons">

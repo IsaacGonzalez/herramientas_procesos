@@ -1,11 +1,12 @@
-
 <%@ page import="herramientas_procesos.Actividad" %>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta name="layout" content="main">
 		<g:set var="entityName" value="${message(code: 'actividad.label', default: 'Actividad')}" />
-		<title><g:message code="default.list.label" args="[entityName]" /></title>
+		%{-- No se por que esto no se escribe en donde realmente va --}%
+		%{-- <title><g:message code="default.list.label" args="[entityName]" /></title> --}%
+		<r:require modules="bootstrap"/>
 	</head>
 	<body>
 		<a href="#list-actividad" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
@@ -20,7 +21,7 @@
 			<g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
-			<table>
+			<table class="table table-striped table-hover">
 				<thead>
 					<tr>
 					
